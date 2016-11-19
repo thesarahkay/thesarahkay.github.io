@@ -1,0 +1,152 @@
+
+div {
+/*    background-color: aqua;*/
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 1% 1% 2.2%;
+    background-color: aliceblue
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+
+
+/*  GRID OF FIVE  */
+.span_5_of_5 {
+	width: 100%;
+}
+.span_4_of_5 {
+	width: 79.76%;
+}
+.span_3_of_5 {
+	width: 59.52%;
+}
+.span_2_of_5 {
+	width: 39.28%;
+}
+.span_1_of_5 {
+	width: 19.04%;
+}
+.span_1_of_3 {
+  width: 100%;
+}
+
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_5, .span_2_of_5, .span_3_of_5, .span_4_of_5, .span_5_of_5, .span_1_of_3 { width: 100%; }
+    body {
+        font-size: 10px;
+    }
+}
+
+/*  100 % 480 - 1150  */
+@media screen and (min-width: 480px) {
+    #wrapper {
+    width: 100%;}
+    .span_1_of_5 {
+        width: 32%
+    }
+    body {
+        font-size: 13px;
+    }
+}
+
+
+/*  1150 AND LARGER  */
+@media screen and (min-width: 1050px) {
+    #wrapper {
+    width: 1050px;
+    margin: 0 auto;
+}
+        body {
+        font-size: 16px;
+    }
+.span_5_of_5 {
+  width: 100%;
+}
+.span_4_of_5 {
+  width: 79.76%;
+}
+.span_3_of_5 {
+  width: 59.52%;
+}
+.span_2_of_5 {
+  width: 39.28%;
+}
+.span_1_of_5 {
+  width: 19.0%;
+}
+.span_1_of_3 {
+  width: 30%;
+}
+
+}
+
+
+body {
+    font-family: "freight-text-pro", sans-serif;
+}
+
+
+h1 {
+    font-family: "freight-text-pro",  sans-serif;
+    font-weight: 100;
+    font-size: 4em;
+}
+
+h2 {
+    font-family: "helvetica", sans-serif;
+    font-size: 1.5em;
+}
+
+p {
+
+}
+
+
+
+a:link, a:visited {
+    color: #db3dff;
+    font-style: normal;
+/*    text-decoration: overline;*/
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+}
+a:active {
+    color: red;
+}
+/* image hover grayscale */
+img {
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+img.special {
+     filter: gray; 
+  filter: grayscale(1); 
+  -webkit-filter: grayscale(0); 
+}
