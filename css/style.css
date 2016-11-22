@@ -15,7 +15,7 @@ div {
 	display: block;
 	float:left;
 	margin: 1% 1% 1% 2.2%;
-    background-color: aliceblue
+    /*background-color: aliceblue*/
 }
 .col:first-child { margin-left: 0; }
 
@@ -98,25 +98,25 @@ div {
   width: 30%;
 }
 
+
 }
 
-
+/* --------------------- TYPOGRAPHY --------------------- */
 body {
     font-family: "freight-text-pro", sans-serif;
 }
-
-
 h1 {
     font-family: "freight-text-pro",  sans-serif;
     font-weight: 100;
     font-size: 4em;
 }
-
 h2 {
     font-family: "helvetica", sans-serif;
     font-size: 1.5em;
 }
-
+h3 {
+	
+}
 p {
 
 }
@@ -146,7 +146,7 @@ img:hover {
   -webkit-filter: grayscale(0);
 }
 img.special {
-     filter: gray; 
-  filter: grayscale(1); 
-  -webkit-filter: grayscale(0); 
+     filter: gray;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(0);
 }
