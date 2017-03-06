@@ -1,0 +1,263 @@
+
+div {
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 1% 1% 2.2%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+
+
+/*  GRID OF FIVE  */
+.span_5_of_5 {
+	width: 100%;
+}
+.span_4_of_5 {
+	width: 79.76%;
+}
+.span_3_of_5 {
+	width: 59.52%;
+}
+.span_2_of_5 {
+	width: 39.28%;
+}
+.span_1_of_5 {
+	width: 19.04%;
+}
+.span_1_of_3 {
+  width: 100%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_5, .span_2_of_5, .span_3_of_5, .span_4_of_5, .span_5_of_5, .span_1_of_3 { width: 100%; }
+    body {
+        font-size: 10px;
+    }
+}
+
+/*  100 % 480 - 1150  */
+	@media screen and (min-width: 480px) {
+	#wrapper {
+	width: 100%;
+	}
+	.span_1_of_5 {
+	    width: 32%
+	}
+	body {
+	    font-size: 13px;
+	}
+}
+
+/*  1150 AND LARGER  */
+@media screen and (min-width: 1050px) {
+	#wrapper {
+		width: 1050px;
+		margin: 0 auto;
+	}
+	body {
+		font-size: 16px;
+	}
+	.span_5_of_5 {
+	  width: 100%;
+	}
+	.span_4_of_5 {
+	  width: 79.76%;
+	}
+	.span_3_of_5 {
+	  width: 59.52%;
+	}
+	.span_2_of_5 {
+	  width: 39.28%;
+	}
+	.span_1_of_5 {
+	  width: 19.0%;
+	}
+	.span_1_of_3 {
+	  width: 30%;
+	}
+}
+
+/* --------------------- TYPOGRAPHY --------------------- */
+
+
+
+h1 {
+    font-family: "freight-text-pro",  sans-serif;
+    font-weight: 100;
+    font-size: 4em;
+}
+h2 {
+    font-family: "helvetica", sans-serif;
+		font-weight: 100;
+    font-size: 1.8em;
+}
+h3 {
+	font-family: "helvetica", sans-serif;
+	font-size: 1em;
+	font-weight: 100;
+}
+
+p {
+	font-family: "freight-text-pro",  sans-serif;
+
+	font-size: 1em;
+}
+
+a:link, a:visited {
+    color: #db3dff;
+    font-style: normal;
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+}
+a:active {
+    color: red;
+}
+
+
+/* --------------------- IMAGES --------------------- */
+/* image hover grayscale */
+img {
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+img.special {
+  filter: gray;
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+
+/* --------------------- D3.js STYLES --------------------- */
+
+body {
+  font-family: "leitura-news", serif;
+}
+
+.d3_header {
+	font-size: 3em;
+	font-family: "leitura-news", serif;
+	font-weight: normal;
+	text-align: center;
+
+}
+
+/*   chart title   */
+h4 {
+	font-size: 18px;
+	font-family: "leitura-news", serif;
+	font-weight: normal;
+	text-align: center;
+	margin-top: -20px;
+}
+
+/*   tip sans-serif type at bottom   */
+h5 {
+    font-size: 11px;
+    font-family: "helvetica", sans-serif;
+    font-weight: normal;
+}
+
+/*   little gray rule in tips   */
+hr {
+    width: 28px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    margin-left: 0;
+    text-align: left;
+    border-style:inset;
+    color: gray;
+    border-width: .1em;
+}
+
+#chart {
+}
+
+.float {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+div .gray_div {
+background-color: #FAFAFA;
+padding-top: 1px;
+padding-bottom: 20px;
+}
+
+/* -------AXIS------- */
+.axis path,
+.axis line {
+    shape-rendering: crispEdges;
+    stroke: none;
+    fill: none;
+}
+
+.axis line y {
+    stroke: pink;
+}
+
+.axis {
+    fill: gray;
+    font-size: 11px;
+}
+
+.label {
+  font-style: italic;
+  font-size: 14px;
+  color: red;
+}
+
+
+/* -------DATA POINTS------- */
+.circle {
+    fill:  none;
+    opacity: .5;
+}
+
+.circle:hover {
+    opacity: 1;
+    stroke-width: 4px;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+
+.d3-tip {
+    line-height: 1.2;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0);
+    color: black;
+    font-size: 14px;
+    text-anchor: left;
+    font-family: "leitura-news", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

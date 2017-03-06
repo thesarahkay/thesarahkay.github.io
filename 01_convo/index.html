@@ -2,7 +2,11 @@
 <html>
     <head>
         <title>SK Miller</title>
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="utf-8">
+        <script type="text/javascript" src="js/d3.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
 
         <script src="https://use.typekit.net/ony1bom.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -10,31 +14,48 @@
     <body>
         <div id="wrapper">
             <div class="section group">
-                <h1>Call me Sarah Kay. I
-                    <a href="#">design,</a>
-                    <a href="#">code,</a>
-                    play with
-                    <a href="#">data,</a>
-                    and
-                    <a href="#">sketch.</a>
-                    And I have a <a href="#">resum&eacute.</a></h1>
+              <h1>Call me <a href="../index.html">Sarah Kay.</a>
             </div>
 
             <div class="section group">
                 <div class="col span_4_of_5">
                     <h2>Dialogue in Literature</h2>
                     <h3>APR 2016</h3>
-                    <h3>Designed and compiled by Sarah Kay Miller, with data cleaning by <a href="derekgunthermiller.info" target="_blank">Derek Miller</a></h3>
-                    <p>How much of a book if conversation? Does it vary between nations? Does an author write the same proportion of dialogue throughout all of their novels? With a few lines of code, we were able to count how many words were in a novel, as well as how many words were in between quotation marks (this is what is considered "dialogue"). It turns out there is quite a spectrum of dialogue in classic novels, with the average proportion of conversation being 45%.</p>
-                    <p>Texts were downloaded from <a href="http://www.gutenberg.org/" target="_blank">gutenberg.org.</a> Data cleaned using Python. Designed and compiled with <a href="https://processing.org/" target="_blank">Processing</a> (Java) and InDesign. Read more about the process and methodology of this project at <a href="https://medium.com/@thesarahkay/how-often-do-classic-characters-chat-67525d0e5008#.5udrde4rk" target="_blank">medium.com/@thesarahkay.</a>
+                    <h3>Designed and compiled by Sarah Kay Miller, with data
+                      cleaning by <a href="www.derekgunthermiller.info" target="_blank">Derek Miller</a></h3>
+                    <p>How much of a book is conversation? Does it vary between
+                      nations? Does an author write the same proportion of
+                      dialogue throughout all of their novels? With a few lines
+                      of code, we were able to count how many words were in a novel,
+                      as well as how many words were in between quotation marks
+                      (this is what is considered "dialogue"). It turns out there
+                      is quite a spectrum of dialogue in classic novels, with the
+                      average proportion of conversation being 45%.</p>
+                    <p>Texts were downloaded from <a href="http://www.gutenberg.org/" target="_blank">gutenberg.org.</a>
+                      Data cleaned using Python. Designed and compiled with
+                      <a href="https://processing.org/" target="_blank">Processing</a>
+                      (Java) and <a href="https://d3js.org/" target="_blank">D3.js.</a> Read more about the process and
+                      methodology of this project at
+                      <a href="https://medium.com/@thesarahkay/how-often-do-classic-characters-chat-67525d0e5008#.5udrde4rk" target="_blank">
+                        medium.com/@thesarahkay.</a>
                 </div>
                 <div class="col span_5_of_5">
-                    <img class="col span_5_of_5 special" src="01_imgs/01_convo.png">
-                    <img class="col span_5_of_5 special" src="01_imgs/02_convo.png">
-                    <img class="col span_5_of_5 special" src="01_imgs/04_convo.png">
-                    <img class="col span_5_of_5 special" src="01_imgs/05_convo.png">
-                    <img class="col span_5_of_5 special" src="01_imgs/06_convo.png">
-                    <img class="col span_5_of_5 special" src="01_imgs/07_convo.png">
+
+                  <!-- <div id="wrapper"> -->
+                              <div class="clear gray_div">
+                                  <h1 class="d3_header">Dialogue in Classic Literature</h1>
+                                  <h4>Interactive chart: Number of words in conversation vs. total number of words</h4><br>
+                              <div class="clear" id="chart"></div>
+                          </div>
+                          <script type="text/javascript" src="js/scatters.js"></script>
+                          <h1 class="d3_header"><br>Dialogue in Classic Literature</h1>
+                          <h4>Comparing the lengths of books and conversation proportions</h4>
+                    <img class="col span_5_of_5 special" src="01_imgs/01_convo.jpg">
+                    <img class="col span_5_of_5 special" src="01_imgs/02_convo.jpg">
+                    <img class="col span_5_of_5 special" src="01_imgs/04_convo.jpg">
+                    <img class="col span_5_of_5 special" src="01_imgs/05_convo.jpg">
+                    <img class="col span_5_of_5 special" src="01_imgs/06_convo.jpg">
+                    <img class="col span_5_of_5 special" src="01_imgs/07_convo.jpg">
                 </div>
             </div>
         </div>
